@@ -1,0 +1,7 @@
+dependencies:
+  espressif/esp-box-3:
+    version: "^3.1.0"
+  espressif/esp_lvgl_port:
+    version: "^2"
+  lvgl/lvgl:
+    version: "~9.2"

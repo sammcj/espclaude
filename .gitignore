@@ -1,0 +1,37 @@
+# Environment
+.env
+
+# ESP-IDF build artifacts
+firmware/build/
+firmware/managed_components/
+firmware/dependencies.lock
+firmware/sdkconfig
+firmware/sdkconfig.old
+
+# ESP-IDF / clangd tooling cache
+firmware/.cache/
+compile_commands.json
+
+# Config with credentials
+**/config.h
+
+# Python (ESP-IDF tooling)
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Temp
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.serena/

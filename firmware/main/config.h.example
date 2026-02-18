@@ -1,0 +1,29 @@
+#pragma once
+
+// WiFi configuration (hardcoded for MVP)
+#define WIFI_SSID       "YourSSID"
+#define WIFI_PASSWORD   "YourPassword"
+#define WIFI_MAX_RETRY  10
+
+// Companion server (CCU with -api flag)
+#define SERVER_URL            "http://192.168.0.100:19840"  // The host that running ccu with it's API enabled
+#define API_TOKEN             ""                            // Bearer token for CCU API auth (leave empty to skip)
+#define API_STATUS_PATH       "/api/status"
+#define POLL_INTERVAL_MS      20000                         // 20 seconds (normal)
+#define POLL_FAST_INTERVAL_MS 2000                          // 2 seconds (until first successful response)
+#define STALE_DATA_SECONDS    900                           // 15 minutes: warn if no API response in this long
+#define SLEEP_AFTER_MS        32400000                      // 9 hours: blank screen and pause polling
+
+// NTP
+#define NTP_SERVER_1    "au.pool.ntp.org"
+#define NTP_SERVER_2    "time.apple.com"
+
+// Display
+#define LCD_WIDTH       320
+#define LCD_HEIGHT      240
+
+// Theme: 0 = default (cyber blue), 1 = Anthropic
+#define THEME_ID        1
+
+// UI update interval
+#define UI_COUNTDOWN_MS 1000   // update countdowns every second
